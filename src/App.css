@@ -1,3 +1,20 @@
+.navbar-link {
+  color: rgba(0,0,0,0.5);
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  display: block;
+  padding: .5rem 1rem;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.page-container {
+  width: 66%;
+  margin: 0 auto;
+  max-width: 1000px;
+  padding-top: 30px;
+}
+
 .App {
   text-align: center;
 }

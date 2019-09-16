@@ -7,6 +7,16 @@ module.exports = {
                 use: ['style-loader', 'css-loader'],
             },
             {
+                test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+                use: [{
+                    loader: 'file-loader',
+                    options: {
+                        name: '[name].[ext]',
+                        outputPath: 'fonts/'
+                    }
+                }]
+            },
+            {
                 test: /\.(js|jsx)$/,
                 exclude: /node_modules/,
                 use: {
@@ -25,7 +35,6 @@ module.exports = {
             },
             {
                 test: /\.(gif|png|jpe?g|svg|ico)$/i,
-                include: /%PUBLIC_URL%/,
                 use: ['file-loader?name=[name].[ext]']
             },
             {
