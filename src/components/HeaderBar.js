@@ -10,10 +10,8 @@ export default function HeaderBar() {
             <Navbar bg='light' sticky="top" expand="sm">
                 <Navbar.Brand href="/">RxWave QA Dashboard</Navbar.Brand>
                 <Nav className="mr-auto">
-                    <Router>
-                        <Link to="/" className="navbar-link">Home</Link>
-                        <Link to="/reports" className="navbar-link">Reports</Link>
-                    </Router>
+                    <Link to="/" className="navbar-link">Home</Link>
+                    <Link to="/reports" className="navbar-link">Reports</Link>
                 </Nav>
             </Navbar>
         </Container>

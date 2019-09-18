@@ -1,9 +1,9 @@
 import React from 'react';
 
 function getColor(score) {
-    if (score < 70) {
+    if (score < 80) {
         return ('#f03e3e');
-    } else if (score < 80) {
+    } else if (score < 90) {
         return ('#f2c922');
     } else {
         return ('#66BB6A');

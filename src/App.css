@@ -137,7 +137,7 @@
 
 .nav-container {
   width: 100%;
-  background-color: #f8f9fa!important;
+  background-color: rgb(15, 0, 52) !important;
   max-width: unset !important;
   box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.18);
   padding: 0;
@@ -147,6 +147,15 @@
   width: 75%;
   max-width: 1100px;
   margin: 0 auto;
+  background-color: rgb(15, 0, 52) !important;
+}
+
+.navbar > a {
+  color: white !important
+}
+
+.navbar > div > a {
+  color: rgba(255,255,255,0.85)
 }
 
 .page-container {
@@ -180,6 +189,95 @@
   padding: 10px 20px 20px;
 }
 
+.spinner-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 0 60px;
+}
+
+.spinner-container > h4 {
+  color: rgba(0,0,0,0.75);
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.reports--title {
+  color: rgba(0,0,0,0.9);
+  margin-bottom: 10px;
+}
+
+.report-list--container {
+  padding-top: 30px;
+}
+
+.report-list--item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.report-list--details {
+  margin-left: 45px;
+}
+
+.report-list--details > div > div {
+  font-size: 0.8rem;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.report-list--details > div > div > span {
+  font-weight: 600;
+  padding-right: 5px;
+}
+
+.report-list--item-button {
+  margin: auto 0 auto auto;
+}
+
+.report-list--icon > i {
+  font-size: 2rem;
+}
+
+.report-list--header {
+  height: 40px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.report-list--header > div {
+  padding: 0 !important;
+}
+
+.report-list--header > h5 {
+  margin: auto auto auto 0;
+}
+
+.report-list--item-rating {
+  height: 100px;
+  width: 100px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: auto;
+  /* box-shadow: 1px 3px 2px 0px rgba(0, 0, 0, 0.18); */
+}
+
+.report-list--item-rating > p {
+  color: rgba(255,255,255,0.9);
+  font-size: 1rem;
+  margin: 10px 0 0 0;
+}
+
+.report-list--item-rating > h3 {
+  padding-top: 10px;
+  color: rgba(255,255,255,0.9);
+}
 
 .App {
   text-align: center;
@@ -216,9 +314,9 @@
 }
 
 #root {
-  background-color: #dedede;
+  background-color: #efefef;
 }
 
 html {
-  background-color: #dedede;
+  background-color: #efefef;
 }

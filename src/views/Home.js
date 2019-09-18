@@ -4,6 +4,7 @@ import ReportPieChart from '../components/ReportPieChart';
 import ReportOverviewCards from '../components/ReportOverviewCards';
 import ReportHistoryChart from '../components/ReportHistoryChart';
 import ReportScore from '../components/ReportScore';
+import ProgressSpinner from '../components/ProgressSpinner';
 import {ReportContext} from '../context/ReportContextProvider';
 import Moment from 'react-moment';
 import {Card} from 'primereact/card';
@@ -28,7 +29,12 @@ export default function Home() {
     return (
         <div className="page-container">
             <Card className="home--card">
-                {loading ? <div>Loading...</div> : (
+                {loading ? (
+                    <div className="spinner-container">
+                        <h4>Loading...</h4>
+                        <ProgressSpinner />
+                    </div>
+                ) : (
                     <div className="page-container--home-outer">
                         <ReportScore score={calcRating(reports[0])} />
                         <div className="home--latest-header">

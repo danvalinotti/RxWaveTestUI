@@ -10,13 +10,14 @@ import {ReportContextProvider} from './context/ReportContextProvider';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Home from './views/Home';
+import Reports from './views/Reports';
 
 ReactDOM.render(
     <ReportContextProvider>
-        <HeaderBar />
         <Router>
+            <HeaderBar />
             <Route path="/" exact component={Home} />
-            <Route path="/reports" component={Home} />
+            <Route path="/reports" component={Reports} />
         </Router>
     </ReportContextProvider>
 , document.getElementById('root'));
