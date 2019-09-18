@@ -1,3 +1,130 @@
+.report-history--container {
+  padding-top: 45px;
+}
+
+.report-history--title {
+  text-align: center;
+}
+
+.report-history--subtitle {
+  font-style: italic;
+  text-align: center;
+  color: rgba(0,0,0,0.75);
+  padding-bottom: 15px;
+  font-size: 0.9rem;
+}
+
+.roc--title {
+  padding-left: 10px;
+  color: rgba(0,0,0,0.75);
+  font-style: italic;
+  font-size: 1.25rem;
+}
+
+.roc--container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 55%;
+  padding-left: 15px;
+}
+
+.roc--section {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  width: 100%;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+.home--title {
+  padding-bottom: 10px;
+}
+
+.home--rating-box {
+  height: 100px;
+  width: 100px;
+  border-radius: 5px;
+  position: absolute;
+  top: -61px;
+  right: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 1px 3px 2px 0px rgba(0, 0, 0, 0.18);
+}
+.home--rating-box > p {
+  color: rgba(255,255,255,0.9);
+  font-size: 1rem;
+  margin: 10px 0 0 0;
+}
+
+.home--rating-box > h3 {
+  color: rgba(255,255,255,0.9);
+  margin: 0 auto;
+  font-size: 2.5rem;
+}
+
+.p-chart {
+  padding-bottom: 15px;
+}
+
+.roc--card {
+  width: 100%;
+  margin-left: 5px;
+  margin-right: 5px;
+  max-width: 33%;
+}
+
+.roc--card-val {
+  color: white;
+  font-weight: 500;
+  text-align: center;
+  padding: 15px;
+}
+
+.roc--card > .p-card-body > .p-card-content {
+  height: 100%;
+  background-color: black;
+  padding: 0;
+}
+
+.roc--card > .p-card-body > .p-card-title {
+  font-size: 0.8rem;
+  text-align: center;
+  color: black;
+  padding-top: 10px;
+
+}
+
+.roc--section > .p-card > .p-card-body {
+  padding: 0px;
+}
+
+.roc--card-container {
+  background-color: #f7f7f7;
+}
+
+.report-pieChart {
+  width: 40%;
+  min-width: 350px;
+}
+
+.report-pieChart--card {
+  height: 100%;
+  background-color: #f7f7f7;  
+}
+
+.report-pieChart--card > .p-card-body > .p-card-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: rgba(0,0,0,0.75);
+  height: 100%;
+  font-style: italic;
+  font-size: 1.25rem;
+}
+
 .navbar-link {
   color: rgba(0,0,0,0.5);
   padding-right: 0.5rem;
@@ -8,12 +135,51 @@
   background-color: transparent;
 }
 
-.page-container {
-  width: 66%;
-  margin: 0 auto;
-  max-width: 1000px;
-  padding-top: 30px;
+.nav-container {
+  width: 100%;
+  background-color: #f8f9fa!important;
+  max-width: unset !important;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.18);
+  padding: 0;
 }
+
+.navbar {
+  width: 75%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.page-container {
+  width: 75%;
+  margin: 0 auto;
+  max-width: 900px;
+  padding-top: 60px;
+}
+
+.page-container--home {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.page-container--home-outer {
+  position: relative;
+}
+
+.home--latest-title {
+  color: rgba(0,0,0,0.9);
+  margin-bottom: 10px;
+}
+
+.home--latest-date {
+  color: rgba(0,0,0,0.75);
+  font-size: 0.8rem;
+  padding-left: 3px;
+}
+
+.home--card {
+  padding: 10px 20px 20px;
+}
+
 
 .App {
   text-align: center;
@@ -47,4 +213,12 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+#root {
+  background-color: #dedede;
+}
+
+html {
+  background-color: #dedede;
 }
