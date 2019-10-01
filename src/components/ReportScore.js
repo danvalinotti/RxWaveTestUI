@@ -1,12 +1,13 @@
 import React from 'react';
+import theme from '../theme';
 
 function getColor(score) {
     if (score < 80) {
-        return ('#f03e3e');
+        return theme.colors.failure.primary;
     } else if (score < 90) {
-        return ('#f2c922');
+        return theme.colors.warning.primary;
     } else {
-        return ('#66BB6A');
+        return theme.colors.success.primary;
     }
 }
 

@@ -11,7 +11,7 @@ export default function ProgressSpinner() {
             width={5}
             radius={2}
             margin={'2px'}
-            color={"#282c34"}
+            color={"#7e76c0"}
             loading={true}
         />
     )

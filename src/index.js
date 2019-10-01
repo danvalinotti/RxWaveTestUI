@@ -11,6 +11,7 @@ import * as serviceWorker from './serviceWorker';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Home from './views/Home';
 import Reports from './views/Reports';
+import Accuracy from './views/Accuracy';
 
 ReactDOM.render(
     <ReportContextProvider>
@@ -18,6 +19,7 @@ ReactDOM.render(
             <HeaderBar />
             <Route path="/" exact component={Home} />
             <Route path="/reports" component={Reports} />
+            <Route path="/accuracy" component={Accuracy} />
         </Router>
     </ReportContextProvider>
 , document.getElementById('root'));

@@ -1,15 +1,16 @@
 import React from 'react';
+import theme from '../theme';
 import {Card} from 'primereact/card';
 
 export default function ReportOverviewCard(props) {
     let bg = "";
 
     if (props.missing === 0) {
-        bg = "#4dfa70";
+        bg = theme.colors.success.primary;
     } else if (props.missing < 10) {
-        bg = "#fada4d";
+        bg = theme.colors.warning.primary;
     } else {
-        bg = "#fa4d4d";
+        bg = theme.colors.failure.primary;
     }
 
     return (
@@ -17,9 +18,10 @@ export default function ReportOverviewCard(props) {
             className="roc--card" 
             title={props.title} 
             subtitle="Missing prices"
-            style={{backgroundColor: bg}}
         >
+            <div className="roc--card-content" style={{backgroundColor: bg}}>
                 <p className="roc--card-val">{`${props.missing}`}</p>
+            </div>
         </Card>
     )
 }

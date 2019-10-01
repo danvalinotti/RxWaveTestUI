@@ -1,4 +1,5 @@
 import React from 'react';
+import theme from '../theme';
 import {DataView, DataViewLayoutOptions} from 'primereact/dataview';
 import Moment from 'react-moment';
 
@@ -8,11 +9,11 @@ function calcRating(report) {
 
 function getColor(score) {
     if (score < 80) {
-        return ('#f03e3e');
+        return theme.colors.failure.primary;
     } else if (score < 90) {
-        return ('#f2c922');
+        return theme.colors.warning.primary;
     } else {
-        return ('#66BB6A');
+        return theme.colors.success.primary;
     }
 }
 
@@ -29,11 +30,11 @@ function renderListItem(report) {
                 <div className="p-grid">
                     <div className="p-col-2 p-sm-6"><span>Created:</span><Moment date={report.createDate} format="MM/DD/YYYY"/></div>
 
-                    <div className="p-col-2 p-sm-6"><span>Total tests: </span> {report.tests}</div>
+                    <div className="p-col-2 p-sm-6"><span>Total tests: </span> <span style={{color: "#2c7ffd"}}>{report.tests}</span></div>
 
-                    <div className="p-col-2 p-sm-6"><span>Passed: </span> {report.passed}</div>
+                    <div className="p-col-2 p-sm-6"><span>Passed: </span> <span style={{color: "#66BB6A"}}>{report.passed}</span></div>
 
-                    <div className="p-col-2 p-sm-6"><span>Failed: </span> {report.failed}</div>
+                    <div className="p-col-2 p-sm-6"><span>Failed: </span> <span style={{color: "#fa4d4d"}}>{report.failed}</span></div>
                 </div>
             </div>
 
@@ -68,6 +69,7 @@ export default function ReportList(props) {
                 itemTemplate={renderListItem}
                 paginator={true}
                 first={first}
+                totalRecords={props.reports.length - (props.reports.length % 5)}
                 rows={5}
                 onPage={(e) => setFirst(e.first)}
                 paginatorPosition="both"

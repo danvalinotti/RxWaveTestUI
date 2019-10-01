@@ -1,4 +1,5 @@
 import React from 'react';
+import theme from '../theme';
 import {Chart} from 'primereact/chart';
 
 export default function ReportPieChart(props) {
@@ -10,19 +11,19 @@ export default function ReportPieChart(props) {
             {
                 data: [latestReport.passed, latestReport.failed],
                 backgroundColor: [
-                    "#66BB6A",
-                    "#fa4d4d"
+                    theme.colors.success.primary,
+                    theme.colors.failure.primary
                 ],
                 hoverBackgroundColor: [
-                    "#82ff9b",
-                    "#ff8282"
+                    theme.colors.success.secondary,
+                    theme.colors.failure.secondary
                 ]
             }]    
         };
 
     return (
         <div className="report-pieChart">
-            <Chart type="pie" data={data} height={200}/>
+            <Chart type="pie" data={data} height={'200'}/>
         </div>
     )
 }
