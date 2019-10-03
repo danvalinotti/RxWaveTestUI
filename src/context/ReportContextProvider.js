@@ -12,7 +12,7 @@ export class ReportContextProvider extends React.Component {
     }
 
     componentDidMount() {
-        fetch('http://localhost:3000/reports', {
+        fetch('http://54.81.21.172:3000/reports', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
