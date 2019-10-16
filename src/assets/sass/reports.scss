@@ -1,0 +1,78 @@
+.reports--title {
+    color: rgba(0, 0, 0, 0.9);
+    margin-bottom: 10px;
+}
+
+.report-list--container {
+    padding-top: 30px;
+}
+
+.report-list--item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.report-list--details {
+    margin-left: 45px;
+
+    >div>div {
+        font-size: 0.8rem;
+        color: rgba(0, 0, 0, 0.6);
+
+        >span {
+            font-weight: 600;
+            padding-right: 5px;
+        }
+    }
+}
+
+.report-list--item-button {
+    margin: auto 0 auto auto;
+}
+
+.report-list--icon>i {
+    font-size: 2rem;
+}
+
+.report-list--header {
+    height: 40px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    > {
+        div {
+            padding: 0 !important;
+        }
+
+        h5 {
+            margin: auto auto auto 0;
+        }
+    }
+}
+
+.report-list--item-rating {
+    height: 100px;
+    width: 100px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+
+    /* box-shadow: 1px 3px 2px 0px rgba(0, 0, 0, 0.18); */
+
+    > {
+        p {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1rem;
+            margin: 10px 0 0 0;
+        }
+
+        h3 {
+            padding-top: 10px;
+            color: rgba(255, 255, 255, 0.9);
+        }
+    }
+}

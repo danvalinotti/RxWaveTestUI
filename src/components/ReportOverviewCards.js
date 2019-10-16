@@ -1,7 +1,5 @@
 import React from 'react';
 import ReportOverviewCard from './ReportOverviewCard';
-import {Card} from 'primereact/card';
-
 
 export default function ReportOverviewCards(props) {
     return (
